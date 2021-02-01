@@ -1,15 +1,24 @@
+## This is my Module 3 submission
+
+## The purpose of this module is to familiarize myself with data frames
+
 Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Bernie")
 ABC_political_poll_results<-c(4, 62, 51, 21, 2, 14, 15)
 NBC_political_poll_results<- c(12, 75, 43, 19, 1, 21, 19)
+## I have now assigned my variables
 
+
+## Binding my variables by column
 results <- cbind(Name, ABC_political_poll_results, NBC_political_poll_results)
 
 results
 
+## Generating a data frame
 results.df <- data.frame(Name, ABC_political_poll_results, NBC_political_poll_results)
 
 results.df
 
+## Generating variables to call for the means of columns 2 and 3 of the data frame
 ABC_Mean <- mean(results.df[,2])
 
 NBC_Mean <- mean(results.df[,3])
