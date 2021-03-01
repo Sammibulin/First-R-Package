@@ -1,0 +1,12 @@
+library(pryr)
+
+data(ability.cov)
+
+class(ability.cov)
+
+pryr::otype(ability.cov)
+
+isS4(ability.cov)
+
+print(ability.cov)
+
